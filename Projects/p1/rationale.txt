@@ -1,0 +1,20 @@
+Design Rationale - Project 1
+Kevin Schaich (netid: krs252)
+
+
+Design Rationale:
+
+This site was intended as a personal website for anyone who has an interest in learning more about me. The design and content reflects my personality and my style, because I really like clean, minimalist, user-friendly design. I've included some information about me, some of the best photography and film work I've done in the past, and social media links where anyone can explore and find out more about me.
+
+The site contains a lot of cool PHP features including a contact form with email validation which allows a user to email me, dynamic PHP page content which adds in static content required on each page (keeps coherency), PHP loops and arrays to populate the contact and work page with repetitive elements, as well as a form response page that informs a user of their message status.
+
+
+WOW factors:
+- Clean, minimalist design with custom fonts
+- Custom JavaScript/jQuery for hidden menu as well as headshot on about page
+- Responsive design with media queries for mobile devices
+- Extensive use of PHP including static page elements
+
+
+Known Issues:
+- Full-screen background buggy on Firefox, but displays fine on Chrome & Safari

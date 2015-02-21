@@ -1,0 +1,259 @@
+body, html {
+	font-family: "jaf-bernino-sans";
+	color: rgba(50,50,50, .5);
+	font-weight: 300;
+}
+.slab-serif {
+	font-family: "abril-titling",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.sans-serif {
+	font-family: "jaf-bernino-sans",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+.light {
+	font-weight: 100;
+}
+.small {
+	font-size: .75em;
+}
+.big {
+	font-size: 1.5em;
+}
+.gray {
+	color:rgba(50,50,50, .5);
+}
+.bold {
+	font-weight: 900;
+}
+.link, .link:hover, .link:visited, .link:active {
+	text-decoration: none;
+}
+.green, .green:hover, .green:visited, .green:active {
+	text-decoration: none;
+	font-weight: 400;
+	color: #A1B56C;
+}
+.header {
+	z-index: 10000;
+	display: block;
+	height: 65px;
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.05);
+	-moz-box-shadow:    0px 2px 2px 0px rgba(50, 50, 50, 0.05);
+	box-shadow:         0px 2px 2px 0px rgba(50, 50, 50, 0.05);
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.sections {
+	display: inline;
+	margin-left:20px;
+}
+.section {
+	margin-left: 20px;
+	margin-right: 20px;
+	display: inline-block;
+	height: 65px;
+	line-height: 65px;
+	vertical-align: middle;
+	color:rgb(50,50,50);
+	border-bottom: 2px solid rgba(50,50,50, 0);
+
+}
+.active {
+	font-weight: 700;
+	color:rgb(50,50,50);
+	border-bottom: 2px solid rgba(50,50,50, 1);
+}
+.title, .title .link {
+	font-family: "jaf-bernino-sans";
+	font-weight: 700;
+	color:rgb(50,50,50);
+	font-size:1.25em;
+}
+.view .title {
+	font-size: 3em;
+	padding-top: 1em;
+	padding-bottom: .5em;
+}
+.view .info {
+	font-size: 1.25em;
+	padding-bottom: .5em;
+}
+.view .content {
+	font-family: "freight-text-pro",sans-serif;
+	font-style: normal;
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 1.75em;
+}
+.view .image {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.content {
+	font-family: "jaf-bernino-sans";
+	color:rgb(50,50,50);
+	font-weight: 300;
+	font-size:1.25em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	width: 100%;
+}
+.article .content {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+.category, .author, .info, .date, .input, option, select, value {
+	font-family: "jaf-bernino-sans";
+	color: rgba(50,50,50, .5);
+	font-weight: 300;
+	display: inline-block;
+}
+.info {
+	display: block;
+	padding-bottom: .5em;
+}
+.hidden {
+	display: none;
+	margin-top: 30px;
+	border-bottom: 1px solid rgba(50,50,50, .25);
+}
+.advanced {
+	display: none;
+}
+.hidden .search .advanced .input {
+	margin-top: 30px;
+}
+.write .input {
+	margin-bottom: 30px;
+}
+.option {
+	text-align: center;
+	margin-top: 30px;
+}
+.form {
+	padding-top: 35px;
+}
+.input {
+	display: block;
+	padding: 5px;
+	font-size: 1.5em;
+	font-weight: 300;
+	border-radius: 5px;
+	border: 1px solid rgba(50,50,50, .25);
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 60%;
+}
+.submit, .hidden .search .submit {
+	background-color: rgba(255,255,255,0);
+	width: 120px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.hidden .input {
+	text-align: center;
+	margin:auto;
+}
+.category, .author {
+	color: #A1B56C;
+	font-weight: 400;
+}
+.image img {
+	width: 100%;
+}
+.article {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid rgba(50,50,50, .25);
+	padding-bottom: 35px;
+	padding-top: 35px;
+}
+.article:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.article .left {
+	width: 70%;
+}
+.article .right {
+	width: 20%;
+}
+.article .left, .article .right {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.main {
+	padding-left:20vw;
+	padding-right:20vw;
+	display: block;
+	padding-bottom: 35px;
+}
+.write {
+	text-align: center;
+	width: 100%;
+}
+.helper {
+	color: #E53929;
+}
+.notice {
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 35px;
+}
+.alert {
+	color: #E53929;
+}
+@media (max-width: 1200px) {
+	.sections {
+		display: none;
+	}
+}
+/*set spacing, sizing, and fonts for mobile devices less than 569px (i.e. iPhone 4/5 in landscape mode)*/
+@media only screen and (max-device-width: 568px) {
+	body, html {
+		font-size: 125%;
+	}
+	.main {
+		padding-left:10vw;
+		padding-right:10vw;
+	}
+	.section {
+		height: 100px;
+		line-height: 100px;
+	}
+	.header {
+		height: 100px;
+	}
+	.submit, .hidden .search .submit {
+		width: 60%;
+	}
+}
+/*set spacing, sizing, and fonts for mobile devices less than 569px (i.e. iPhone 4/5 in landscape mode)*/
+@media only screen and (max-device-width: 568px) and (orientation: portrait) {
+	body, html {
+		font-size: 150%;
+	}
+	.main {
+		padding-left:10vw;
+		padding-right:10vw;
+	}
+	.section {
+		height: 125px;
+		line-height: 125px;
+	}
+	.header {
+		height: 125px;
+	}
+}
