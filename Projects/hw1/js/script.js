@@ -87,24 +87,29 @@ $(document).ready(function(){
 	})
 	// EXTRA CREDIT: form submission
 	// hint: set values for both hidden fields, so that those values can be used later
-	
-	
-	// EXTRA CREDIT: apply previous formatting settings
-	// hint: readCookie might be useful
-	// readCookie taken from http://www.quirksmode.org/js/cookies.html
-	// readCookie returns value, or null if cookie has not been set
-	function readCookie(name) {
-		var nameEQ = name + "=";
-		var ca = document.cookie.split(';');
-		for(var i=0;i < ca.length;i++) {
-			var c = ca[i];
-			while (c.charAt(0)==' ') c = c.substring(1,c.length);
-			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-		}
-		return null;
+	$("input[name=savebutton]").on('click', function() {
+
+		var pokedex = $("#text h3").nextAll().text();
+		$("input[name=hiddentext]").val(pokedex);
+	});
+
+
+// EXTRA CREDIT: apply previous formatting settings
+// hint: readCookie might be useful
+// readCookie taken from http://www.quirksmode.org/js/cookies.html
+// readCookie returns value, or null if cookie has not been set
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
 	}
-	
-	
+	return null;
+}
+
+
 });
 
 /* Replaces all instances of "replace" with "with_this" in the string "txt"
