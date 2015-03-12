@@ -1,0 +1,55 @@
+body, html {
+	color: rgba(50,50,0,1);
+	font-size: 85%;
+	font-family: "Times New Roman";
+}
+
+.header {
+	font-family: "Quicksand";
+	color: rgba(50,50,0,1);
+	font-weight: 300;
+	text-align: center;
+	font-size: 1em;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+#scene {
+	font-family: "questa_granderegular";
+	font-size: 4em;
+}
+#scene, .section {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.main {
+	display: block;
+	margin: auto;
+	width: 80vw;
+	text-align: center;
+	font-size: 1.5em;
+	padding-bottom: 5%;
+}
+.title {
+	padding: 2%;
+}
+.image img{
+	width: 100%;
+}
+.ditem {
+	display: inline-block;
+	padding: 2%;
+}
+
+@media (max-width: 1200px) {
+
+}
+/*set spacing, sizing, and fonts for mobile devices less than 569px (i.e. iPhone 4/5 in landscape mode)*/
+@media only screen and (max-device-width: 568px) {
+
+}
+/*set spacing, sizing, and fonts for mobile devices less than 569px (i.e. iPhone 4/5 in landscape mode)*/
+@media only screen and (max-device-width: 568px) and (orientation: portrait) {
+
+}
