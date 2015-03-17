@@ -43,7 +43,7 @@ a, a:hover, a:visited, a:active {
 .main {
 	display: block;
 	margin: auto;
-	width: 100%;
+	width: 80%;
 	text-align: center;
 	padding-bottom: 5vh;
 	padding-top: 5vh;
@@ -78,6 +78,11 @@ a, a:hover, a:visited, a:active {
 }
 .entry {
 	padding-bottom: 10vh;
+}
+.upload input {
+	display: block;
+	margin: 10px auto;
+	padding: 5px;
 }
 @media (max-width: 768px) {
 	.header {

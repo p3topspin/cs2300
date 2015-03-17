@@ -1,4 +1,3 @@
-//Wait until ready for input
-jQuery(document).ready(function($) {
-
-});
+// $(window).load(function() {
+// 	$('image').hide().fadeIn();
+// });
