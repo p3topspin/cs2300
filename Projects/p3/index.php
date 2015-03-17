@@ -11,27 +11,27 @@
 	<!--Gets static navigation bar-->
 	<?php require 'static/navigation.php';?>
 
+	<!--Gets static PHP functions-->
+	<?php require 'static/main.php';?>
+
 	<div class="main">
 
-		<?php 
-
+		<?php
 		require_once 'static/config.php';
 		$mysqli = new mysqli( DB_HOST, DB_USER, DB_PASSWORD, DB_NAME );
 
-		$result = $mysqli->query("SELECT * FROM images INNER JOIN groups ON images.imgID = groups.imgID INNER JOIN albums ON groups.albumID = albums.albumID");
+		if(isset($_GET['albumTitle'])) {
+			$result = $mysqli->query('SELECT * FROM images INNER JOIN groups ON images.imgID = groups.imgID INNER JOIN albums ON groups.albumID = albums.albumID WHERE albumTitle = "Landscapes"');
+		}
+		else{
+			$result = $mysqli->query("SELECT * FROM images INNER JOIN groups ON images.imgID = groups.imgID INNER JOIN albums ON groups.albumID = albums.albumID");
+		}
 		while ( $row = $result->fetch_row() ) {
-			print( '<div class="title">' . $row[2] . '</div>');
-			print( '<div class="image"><img src="' . $row[1] . '"></div>');
-			for ($i=3; $i < 11; $i++) {
-				if (! ($row[$i] === NULL)) {
-					print( '<div class="ditem">' . $row[$i] . '</div>');
-				}
-			}
+			printImage($row);
 		}
 
 		?>
-		TESTINGNGGGG
-
+		All 'search' related functions go here. E.g. display all images, display a certain album, etc.
 	</div>
 
 </body>

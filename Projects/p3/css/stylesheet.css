@@ -1,49 +1,94 @@
 body, html {
-	color: rgba(50,50,0,1);
-	font-size: 85%;
-	font-family: "Times New Roman";
-}
-
-.header {
-	font-family: "Quicksand";
-	color: rgba(50,50,0,1);
+	font-family: "freight-display-pro";
 	font-weight: 300;
+	background-color: #FAFAFA;
+}
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+	color: rgba(50,50,0,1);
+	margin: 0;
+	padding: 0;
+}
+.header {
+	font-size: 85%;
+	color: rgba(50,50,0,1);
 	text-align: center;
-	font-size: 1em;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+.collapse {
+	display: none;
+}
+.header, .settings, .author, .likes {
+	color: rgba(50,50,0,1);
+	font-family: "Avenir Next";
+	font-weight: 100;
 }
 #scene {
-	font-family: "questa_granderegular";
-	font-size: 4em;
+	font-family: "Didot";
+	font-size: 5vw;
+	display: block;
 }
 #scene, .section {
-	display: inline-block;
 	vertical-align: middle;
 	padding-left: 2%;
 	padding-right: 2%;
 }
+.section {
+	display: inline-block;
+}
+#sections, #search {
+	padding-top: 5vh;
+}
 .main {
 	display: block;
 	margin: auto;
-	width: 80vw;
+	width: 100%;
 	text-align: center;
-	font-size: 1.5em;
-	padding-bottom: 5%;
+	padding-bottom: 5vh;
+	padding-top: 5vh;
 }
-.title {
-	padding: 2%;
+.title { 
+	font-size: 4vw;
+}
+.date {
+	display: none;
 }
 .image img{
 	width: 100%;
 }
-.ditem {
+.exif, .likes {
+	font-size: 75%;
+	padding-left: 10px;
+	padding-right: 10px;
 	display: inline-block;
-	padding: 2%;
 }
+.data {
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+.settings {
 
-@media (max-width: 1200px) {
-
+}
+.author, .likes {
+	text-transform: uppercase;
+}
+.author {
+	margin-bottom: 1vh;
+}
+.entry {
+	padding-bottom: 10vh;
+}
+@media (max-width: 768px) {
+	.header {
+		margin-bottom: 3vh;
+	}
+	#scene {
+		font-size: 10vw;
+	}
+	.title {
+		font-size: 200%;
+	}
 }
 /*set spacing, sizing, and fonts for mobile devices less than 569px (i.e. iPhone 4/5 in landscape mode)*/
 @media only screen and (max-device-width: 568px) {

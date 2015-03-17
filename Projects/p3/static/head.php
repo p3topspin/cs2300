@@ -9,10 +9,7 @@
 <link href="css/reset.css" rel="stylesheet">
 <!--Font Awesome Icon Font-->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<!-- Questa Grande Font -->
-<link rel="stylesheet" href="assets/fonts/questa_grande/questa_grande.css">
-<!-- Google Fonts Quicksand -->
-<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <!--Custom CSS for all pages-->
 <link rel="stylesheet" href="css/stylesheet.css">
 
@@ -23,3 +20,6 @@
 
 <!--Custom Javascript-->
 <script src="js/main.js"></script>
+
+<script src="//use.typekit.net/unl4nbk.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
